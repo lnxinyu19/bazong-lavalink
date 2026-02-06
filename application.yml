@@ -33,8 +33,8 @@ plugins:
     clients:
       - MUSIC
       - WEB
-      - ANDROID_VR
-      - TVHTML5EMBEDDED
+      - MWEB
+      - WEBEMBEDDED
     # OAuth 認證（推薦）
     # 首次啟動時查看 log，會出現 Google 授權 URL
     # 授權後 log 會輸出 refreshToken，貼到下方
