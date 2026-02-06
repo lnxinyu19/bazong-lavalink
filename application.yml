@@ -40,7 +40,7 @@ plugins:
     # 授權後 log 會輸出 refreshToken，貼到下方
     oauth:
       enabled: true
-      # refreshToken: "${YOUTUBE_OAUTH_REFRESH_TOKEN}"
+      refreshToken: "${YOUTUBE_OAUTH_REFRESH_TOKEN}"
 
 logging:
   level:
