@@ -32,9 +32,9 @@ plugins:
     allowDirectPlaylistIds: true
     clients:
       - MUSIC
-      - WEB
-      - MWEB
-      - WEBEMBEDDED
+      - TVHTML5EMBEDDED
+      - ANDROID_TESTSUITE
+      - IOS
     # OAuth 認證（推薦）
     # 首次啟動時查看 log，會出現 Google 授權 URL
     # 授權後 log 會輸出 refreshToken，貼到下方
