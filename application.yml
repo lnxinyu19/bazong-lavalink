@@ -35,9 +35,9 @@ plugins:
       - ANDROID_VR
       - WEB
       - WEBEMBEDDED
-    # OAuth 認證（推薦）
-    # 首次啟動時查看 log，會出現 Google 授權 URL
-    # 授權後 log 會輸出 refreshToken，貼到下方
+    pot:
+      token: "MnijW-lqK4zvN6NnbvE7635f_R6DYntZ4vrG4Ggaz1Qnt1P4ZMGZ-0848ZHojE7iDMZongQ5aqAW8Fe3NRVusmXhKBBBF5w9HbD2N7wVpzmhrYqg53MxLCpgYNzREy7yyB0MYER9lDBoRfSTtG5WCIk7kzXf4S249Bo="
+      visitorData: "CgtZZnhtZTBjZnhHdyjh5JjMBjIKCgJUVxIEGgAgLQ%3D%3D"
     oauth:
       enabled: true
       refreshToken: "${YOUTUBE_OAUTH_REFRESH_TOKEN}"
