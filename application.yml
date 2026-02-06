@@ -4,7 +4,7 @@ server:
 
 lavalink:
   plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:023666c35a4789299146551a10440a3ca9c05518-SNAPSHOT"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:023666c35a4789299146551a10440a3ca9c05518"
       repository: "https://maven.lavalink.dev/snapshots"
       snapshot: true
   server:
