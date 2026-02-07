@@ -31,11 +31,14 @@ plugins:
       - WEB
       - ANDROID_VR
       - TVHTML5EMBEDDED
+    remoteCipher:
+      url: "https://cipher.kikkia.dev/"
     oauth:
       enabled: true
       # 第一次啟動：不填 refreshToken，看 log 完成授權流程
       # 授權完成後把 token 填回來：
       refreshToken: "${YOUTUBE_OAUTH_REFRESH_TOKEN}"
+
 
 logging:
   level:
