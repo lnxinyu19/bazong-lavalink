@@ -4,13 +4,12 @@ server:
 
 lavalink:
   plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:023666c35a4789299146551a10440a3ca9c05518"
-      repository: "https://maven.lavalink.dev/snapshots"
-      snapshot: true
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.16.0"
+      repository: "https://maven.lavalink.dev/releases"
   server:
     password: "${LAVALINK_SERVER_PASSWORD:youshallnotpass}"
     sources:
-      youtube: false  # 必須關閉內建 YouTube source，改用 youtube-source 插件
+      youtube: false
       bandcamp: true
       soundcloud: true
       twitch: true
@@ -19,10 +18,7 @@ lavalink:
       local: false
     bufferDurationMs: 400
     frameBufferDurationMs: 5000
-    youtubePlaylistLoadLimit: 6
     playerUpdateInterval: 5
-    youtubeSearchEnabled: true
-    soundcloudSearchEnabled: true
 
 plugins:
   youtube:
@@ -32,14 +28,13 @@ plugins:
     allowDirectPlaylistIds: true
     clients:
       - MUSIC
-      - ANDROID_VR
       - WEB
-      - WEBEMBEDDED
-    pot:
-      token: "MnijW-lqK4zvN6NnbvE7635f_R6DYntZ4vrG4Ggaz1Qnt1P4ZMGZ-0848ZHojE7iDMZongQ5aqAW8Fe3NRVusmXhKBBBF5w9HbD2N7wVpzmhrYqg53MxLCpgYNzREy7yyB0MYER9lDBoRfSTtG5WCIk7kzXf4S249Bo="
-      visitorData: "CgtZZnhtZTBjZnhHdyjh5JjMBjIKCgJUVxIEGgAgLQ%3D%3D"
+      - ANDROID_VR
+      - TVHTML5EMBEDDED
     oauth:
       enabled: true
+      # 第一次啟動：不填 refreshToken，看 log 完成授權流程
+      # 授權完成後把 token 填回來：
       refreshToken: "${YOUTUBE_OAUTH_REFRESH_TOKEN}"
 
 logging:
